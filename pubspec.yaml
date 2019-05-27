@@ -2,7 +2,7 @@ name: flutter_backdrop_twoside
 description: A backdrop widget with both side.
 version: 0.0.1
 author:
-homepage:
+homepage: https://github.com/sajjadws/flutter_backdrop_twoside
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

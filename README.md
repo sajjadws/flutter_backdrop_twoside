@@ -1,14 +1,38 @@
-# flutter_backdrop_twoside
+# Toast
 
-A new Flutter plugin.
+A Flutter Toast plugin.
 
-## Getting Started
+## How to Use
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+```yaml
+# add this line to your dependencies
+toast: ^0.1.4
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:toast/toast.dart';
+```
+
+```dart
+Toast.show("Toast plugin app", context, duration: Toast.LENGTH_SHORT, gravity:  Toast.BOTTOM);
+```
+
+property | description
+--------|------------
+msg | String (Not Null)(required)
+context | BuildContext (Not Null)(required)
+duration| Toast.LENGTH_SHORT or Toast.LENGTH_LONG (optional)
+gravity | Toast.TOP (or) Toast.CENTER (or) Toast.BOTTOM
+textColor | Color (default white)
+backgroundColor | Color (default Color(0xAA000000))
+backgroundRadius | double （default 16)
+
+
+![toast](https://github.com/huclengyue/FlutterToast/blob/master/screenshot/141107.png)
+![toast](https://github.com/huclengyue/FlutterToast/blob/master/screenshot/141134.png)
+
+
+## License
+
+    MIT License
+
